@@ -13,6 +13,18 @@ BOOKS_DATABASE = [
 
 
 # TODO написать класс Book
+class Book:
+    def __init__(self, id, name, pages):
+        self.id = id         # идентификатор книги
+        self.name = name     # Название книги
+        self.pages = pages   # количество страниц в книге
+
+    def __str__(self) -> str:
+        return f"Книга название книги = {self.name}"
+
+    def __repr__(self) -> str:
+        return f"Book(id_=1, name='test_name_1', pages=200)"
+
 
 
 if __name__ == '__main__':

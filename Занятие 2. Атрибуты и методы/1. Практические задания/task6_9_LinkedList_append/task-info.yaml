@@ -4,24 +4,24 @@ files:
     visible: true
     placeholders:
       - offset: 246
-        length: 43
+        length: 92
         placeholder_text: "...  # TODO инициализировать связный список"
         initial_state:
           length: 43
           offset: 246
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: "...  # TODO инициализировать связный список"
-      - offset: 1481
-        length: 75
+      - offset: 1564
+        length: 286
         placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
         initial_state:
           length: 75
           offset: 1481
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: "...  # TODO реализовать алгоритм добавления узла в\
       \ конец последовательности"

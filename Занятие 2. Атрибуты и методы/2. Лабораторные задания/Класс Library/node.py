@@ -28,8 +28,3 @@ class Node:
     def set_next(self, next_: Optional["Node"] = None) -> None:
         self.is_valid(next_)
         self.next = next_
-
-
-
-node1 = Node(5, None)
-node2 = Node(7, node1)

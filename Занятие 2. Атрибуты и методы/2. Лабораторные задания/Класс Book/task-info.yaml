@@ -20,7 +20,7 @@ files:
           length: 26
           offset: 188
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: |-
           class Book:

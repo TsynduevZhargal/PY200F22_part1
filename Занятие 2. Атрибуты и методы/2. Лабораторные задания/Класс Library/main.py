@@ -1,3 +1,6 @@
+
+from node import Node
+
 BOOKS_DATABASE = [
     {
         "id": 1,
@@ -13,9 +16,28 @@ BOOKS_DATABASE = [
 
 
 # TODO написать класс Book
-
+class Book:
+    def __init__(self, id, name, pages):
+        self.id = id         # идентификатор книги
+        self.name = name     # Название книги
+        self.pages = pages   # количество страниц в книге
 
 # TODO написать класс Library
+
+class Library:
+    def __init__(self, books):
+        self.books = books   # Список книг
+
+    def append(self, value:   ):  # записать метод
+        append_node = Node(value)
+        if self. is None:
+            self.get_next_book_id = append_node
+        else:
+            last_node = self.get_next_book_id(self.books - 1)
+            self.get_next_book_id(last_node, append_node)
+        self.books = + 1
+
+
 
 
 if __name__ == '__main__':

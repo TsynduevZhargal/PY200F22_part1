@@ -13,7 +13,7 @@ files:
         selected: false
         status: Unchecked
         encrypted_possible_answer: "# TODO атрибут, хранящий длину последовательности"
-      - offset: 613
+      - offset: 664
         length: 45
         placeholder_text: '# TODO устанавливаем длину последовательности'
         initial_state:
@@ -23,7 +23,7 @@ files:
         selected: false
         status: Unchecked
         encrypted_possible_answer: '# TODO устанавливаем длину последовательности'
-      - offset: 1487
+      - offset: 1538
         length: 43
         placeholder_text: '# TODO проверка корректности границ индекса'
         initial_state:
@@ -33,7 +33,7 @@ files:
         selected: false
         status: Unchecked
         encrypted_possible_answer: '# TODO проверка корректности границ индекса'
-      - offset: 2023
+      - offset: 2144
         length: 77
         placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
       связного списка'
