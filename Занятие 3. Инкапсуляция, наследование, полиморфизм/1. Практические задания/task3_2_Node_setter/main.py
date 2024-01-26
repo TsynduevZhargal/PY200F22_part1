@@ -13,8 +13,10 @@ class Node:
         self.value = value
 
         # TODO заменить на вызов setter
-        self.next = None
-        self.set_next(next_)
+        self.next = next_
+        self.next_next(next_)
+        # self.next = None
+        # self.set_next(next_)
 
     def __repr__(self) -> str:
         return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
@@ -27,14 +29,24 @@ class Node:
             raise TypeError
 
     # TODO заменить на getter и setter
-    def set_next(self, next_: Optional["Node"] = None) -> None:
-        self.is_valid(next_)
-        self.next = next_
+    @property
+    def next(self):
+        return self.__next
+    @next.setter
+    def next(self, value):
+        print('Вызван сеттер')
+        self.is.valid(value)
+        self.__next == value
+
+    # def set_next(self, next_: Optional["Node"] = None) -> None:
+    #     self.is_valid(next_)
+    #     self.next = next_
 
 
 if __name__ == "__main__":
     first_node = Node(1)  # отработал setter в init
     second_node = Node(2)  # отработал setter в init
+    dg_node = Node(125)
 
     first_node.next = second_node
 

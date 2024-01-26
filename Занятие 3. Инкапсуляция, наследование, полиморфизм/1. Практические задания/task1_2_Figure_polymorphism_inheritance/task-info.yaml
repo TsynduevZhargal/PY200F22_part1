@@ -3,26 +3,26 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 238
-        length: 59
+      - offset: 267
+        length: 63
         placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
         initial_state:
           length: 59
           offset: 238
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
-      - offset: 364
-        length: 59
+      - offset: 518
+        length: 84
         placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
         initial_state:
           length: 59
           offset: 364
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
     text: |
@@ -69,5 +69,8 @@ files:
       Вызван метод класса Rectangle
       Вызван метод класса Circle
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Syntax Error
+  time: "Fri, 26 Jan 2024 15:36:57 UTC"
 record: -1

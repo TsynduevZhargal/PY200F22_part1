@@ -13,8 +13,8 @@ files:
         selected: true
         status: Unchecked
         encrypted_possible_answer: "...  # TODO инициализировать связный список"
-      - offset: 1564
-        length: 286
+      - offset: 1567
+        length: 288
         placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
         initial_state:

@@ -4,28 +4,28 @@ files:
     visible: true
     placeholders:
       - offset: 245
-        length: 33
+        length: 62
         placeholder_text: "...  # TODO добавить атрибут tail"
         initial_state:
           length: 33
           offset: 245
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: "...  # TODO добавить атрибут tail"
-      - offset: 548
-        length: 64
+      - offset: 577
+        length: 75
         placeholder_text: "self.head = append_node  # TODO добавить использование self.tail"
         initial_state:
           length: 64
           offset: 548
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: "self.head = append_node  # TODO добавить использов\
       ание self.tail"
-      - offset: 639
-        length: 181
+      - offset: 792
+        length: 0
         placeholder_text: |-
           last_index = self.len - 1  # TODO Переделать через атрибут tail
                       last_node = self.step_by_step_on_nodes(last_index)
@@ -35,25 +35,25 @@ files:
           length: 181
           offset: 639
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: |-
           last_index = self.len - 1  # TODO Переделать через атрибут tail
                       last_node = self.step_by_step_on_nodes(last_index)
           
                       self.linked_nodes(last_node, append_node)
-      - offset: 1584
-        length: 89
-        placeholder_text: "left_node.set_next(right_node)  # TODO next теперь свойство\
-      \ имеет setter, используйте это"
+      - offset: 1554
+        length: 85
+        placeholder_text: "left_node.set_next(right_node)  # TODO __next теперь свойст\
+      во имеет setter, используйте это"
         initial_state:
           length: 89
           offset: 1584
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
-        encrypted_possible_answer: "left_node.set_next(right_node)  # TODO next теперь\
-      \ свойство имеет setter, используйте это"
+        selected: true
+        status: Failed
+        encrypted_possible_answer: "left_node.set_next(right_node)  # TODO __next тепе\
+      рь свойство имеет setter, используйте это"
     text: |
       from typing import Any, Iterable, Optional
       
@@ -184,5 +184,8 @@ files:
               self.is_valid(next_)
               self._next = next_
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Syntax Error
+  time: "Fri, 26 Jan 2024 16:37:40 UTC"
 record: -1

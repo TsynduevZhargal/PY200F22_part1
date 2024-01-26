@@ -23,11 +23,11 @@ class Node:
         if not isinstance(node, (type(None), Node)):
             raise TypeError
 
-    @property
-    def next(self):
-        return self._next
-
-    @next.setter
-    def next(self, next_: Optional["Node"]):
-        self.is_valid(next_)
-        self._next = next_
+    # @property
+    # def next(self):
+    #     return self._next
+    #
+    # @next.setter
+    # def next(self, next_: Optional["Node"]):
+    #     self.is_valid(next_)
+    #     self._next = next_
