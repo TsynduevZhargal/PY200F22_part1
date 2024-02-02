@@ -14,7 +14,7 @@ files:
         status: Failed
         encrypted_possible_answer: "...  # TODO добавить атрибуты"
       - offset: 546
-        length: 47
+        length: 46
         placeholder_text: "...  # TODO вернуть значение узла"
         initial_state:
           length: 33
@@ -23,7 +23,7 @@ files:
         selected: true
         status: Failed
         encrypted_possible_answer: "...  # TODO вернуть значение узла"
-      - offset: 599
+      - offset: 598
         length: 96
         placeholder_text: '# TODO добавить метод get_next'
         initial_state:
@@ -33,7 +33,7 @@ files:
         selected: true
         status: Failed
         encrypted_possible_answer: '# TODO добавить метод get_next'
-      - offset: 974
+      - offset: 1004
         length: 57
         placeholder_text: '# TODO с помощью метода распечатать значение первого узла'
         initial_state:
@@ -44,7 +44,7 @@ files:
         status: Failed
         encrypted_possible_answer: '# TODO с помощью метода распечатать значение первого
       узла'
-      - offset: 1036
+      - offset: 1066
         length: 64
         placeholder_text: '# TODO  с помощью метода распечатать следующий узел второго
       узла'
@@ -97,10 +97,11 @@ files:
 status: Failed
 feedback:
   message: Incorrect
-  time: "Fri, 12 Jan 2024 16:58:31 UTC"
+  time: "Thu, 01 Feb 2024 23:25:33 UTC"
   expected: |
     1
     None
   actual: |
-    <__main__.Node object at 0x000001BA19E7C820>
+    <__main__.Node object at 0x000002A65DE24A10>
+    <__main__.Node object at 0x000002A65DE24A50>
 record: -1

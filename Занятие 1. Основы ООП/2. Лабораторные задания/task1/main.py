@@ -3,30 +3,45 @@ from typing import Union
 # TODO Написать 3 класса с документацией и аннотацией типов
 
 
-class House:   # Дом
-    def __init__(self, low: Union[int, float], high: Union[int, float]):  # низкий или высокий
-        if not isinstance(low, (int, float)):
-            raise TypeError
-        if low <= 0:
+class House:   # класс Дом
+    def __init__(self, height: Union[int, float], material: Union[str]):
+        if not isinstance(height, (int, float)):
+            raise TypeError   # Не является числом
+        if height <= 0:
             raise ValueError  # Не может быть отрицательной
 
-        if not isinstance(high, (int, float)):
-            raise TypeError
-        if high <= 0:
-            raise ValueError   # Не может быть отрицательной
+        self.height = height     # высота (этажность)
+        self.material = material   # материал
 
-        if low > high:
-            raise TypeError     # Не возможно чтобы низкий был выше высокого
+    def build_house(self, height):
+        ...
 
-        self.low = low
-        self.high = high
+# TODO работоспособность экземпляров класса проверить с помощью doctest
+if __name__ == "__main__":
+    ...
+
+
+
+
+class Car:    # класс автомобиль
+    def __init__(self, speed: int, power: int):
+        self.speed = speed   # цвет
+        self.power = power   # мощность
+
+    def Truck(self, power):
+        ...
 
 if __name__ == "__main__":
-    house1 = House(2, 10)
-    print(house1.low, house1.high)
-    house2 = House(8, 22)
-    print(house2.low, house2.high)
-    print("достроили дом № 1 на 2 этажа")
-    house3 = House()
-    # TODO работоспособность экземпляров класса проверить с помощью doctest
-    pass
+    ...
+
+class Suit:    # класс костюм
+    def __init__(self, colour: str, size: int):
+        self.colour = colour   # цвет
+        self.size = size       # размер
+
+    def men_suit(self, colour):
+        ...
+
+if __name__ == "__main__":
+    ...
+print()

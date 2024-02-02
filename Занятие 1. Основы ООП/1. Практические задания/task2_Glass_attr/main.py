@@ -25,8 +25,8 @@ if __name__ == "__main__":
 
     print("Доливаем воды в первый стакан...")
     #  TODO доливаем воды в первый стакан
-    glass1.occupied_volume = 'cgj'
-    glass2.occupied_volume = glass1.occupied_volume+200
+    glass1.occupied_volume = 300
+    glass2.occupied_volume = glass1.occupied_volume + 200
 
     print(glass1.capacity_volume, glass1.occupied_volume)
     print(glass2.capacity_volume, glass2.occupied_volume)

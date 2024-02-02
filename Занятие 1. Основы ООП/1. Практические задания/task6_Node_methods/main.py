@@ -14,7 +14,7 @@ class Node:
         self.next = next_
     def get_value(self) -> Any:
         """Метод, который возвращает значение атрибута value"""
-        return  self.value # TODO вернуть значение узла
+        return self.value # TODO вернуть значение узла
 
     def get_next(self) -> Optional['Node']:
         return self.next  # TODO добавить метод get_next
@@ -23,9 +23,10 @@ class Node:
 if __name__ == '__main__':
     second_node = Node(2)
     first_node = Node(1, second_node)   # первый узел
-    nul_node = Node(0, first_node)   # второй узел
+    nul_node = Node(3, first_node)   # второй узел
 
     print(first_node.get_next())
+    print(nul_node.get_next())
     # print(second_node.get_value())
     # str_ = 'dfdfd'
     # str_join(str_)

@@ -8,7 +8,7 @@ class Glass:
         if capacity_volume <= 0:
             raise ValueError("Невозможна отрицательная величина")
 
-        if isinstance(occupied_volume, (int, float)):
+        if not isinstance(occupied_volume, (int, float)):
             raise TypeError("Неправильный тип данных")
         if occupied_volume <= 0:
             raise ValueError("Невозможна отрицательная величина")
@@ -22,6 +22,6 @@ class Glass:
 if __name__ == "__main__":
     glass1 = Glass(200, 100)  # TODO инициализировать два объекта типа Glass
     print(glass1)
-# glass2 = Glass(50, 500)   # необходимо обезопасить ввод неправильных данных и проверить
+    glass2 = Glass(500, 50)   # необходимо обезопасить ввод неправильных данных и проверить
 
     # TODO попробовать инициализировать не корректные объекты

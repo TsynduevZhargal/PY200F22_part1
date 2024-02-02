@@ -20,6 +20,6 @@ class Glass:
 
 
 if __name__ == "__main__":
-    glass3 = Glass(300, 200)  # TODO инициализировать экземпляр класса Glass
-    print(glass3.capacity_volume)  # TODO распечатать атрибут capacity_volume
-    print(glass3.occupied_volume)  # TODO распечатать атрибут occupied_volume
+    glass1 = Glass(200, 100)  # TODO инициализировать экземпляр класса Glass
+    print(glass1.capacity_volume)  # TODO распечатать атрибут capacity_volume
+    print(glass1.occupied_volume)  # TODO распечатать атрибут occupied_volume

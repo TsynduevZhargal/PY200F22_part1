@@ -21,7 +21,7 @@ files:
           offset: 188
         initialized_from_dependency: false
         selected: true
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           class Book:
               ...
@@ -53,5 +53,8 @@ files:
       
           print(list_books)  # проверяем метод __repr__
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error during execution
+  time: "Thu, 01 Feb 2024 21:42:36 UTC"
 record: -1
