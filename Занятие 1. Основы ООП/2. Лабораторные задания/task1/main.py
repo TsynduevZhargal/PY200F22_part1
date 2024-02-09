@@ -12,23 +12,27 @@ class House:   # класс Дом
 
         self.height = height     # высота (этажность)
         self.material = material   # материал
-
-    def build_house(self, height):
-        ...
+    #
+    # def build_house(self, height):
+    #     """
+    #     Стройка дополнительных этажей
+    #     param house: Количество добавляемых этажей
+    #     """
+    def __str__(self) -> str:
+        return f"Количество этажей = {self.height}. Вид материала = {self.material}"
 
 # TODO работоспособность экземпляров класса проверить с помощью doctest
 if __name__ == "__main__":
-    ...
-
-
+    height = House(1, "деревянный")
+    print(height)
 
 
 class Car:    # класс автомобиль
     def __init__(self, speed: int, power: int):
-        self.speed = speed   # цвет
+        self.speed = speed   # скорость
         self.power = power   # мощность
 
-    def Truck(self, power):
+    def Truck(self, power):  # мощность грузового автомобиля выше
         ...
 
 if __name__ == "__main__":
